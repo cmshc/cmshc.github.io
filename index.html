@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berkeley Hackclub</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="script.js"></script>
+</head>
+<body id="body" onload="init()">
+    <img src="Icons/logo.png" id="mainImage" />
+    <p id="meetingDatesTitle">
+      Welcome to the Official BHS Hackclub page! Our mission is to create a culture
+      around project-based Computer Science at Berkeley High.
+      We meet twice a week, Wednesdays & Thursdays in room H205.
+    </p>
+
+    <div class="meetInfo">
+          <div class="calendar">
+            <div class="calendar_top"> ... </div>
+            <p class="calendar_day"> ... </p>
+          </div>
+          <div class="meetText">
+            <p > Next Meeting: </p>
+            <p > 11:40am - 12:20pm </p>
+          </div>
+    </div>
+
+    <div id="largeResource"> Resources </div>
+
+    <div style=" width: 90%; margin:auto;  margin-top: 70px; margin-bottom: 40px; text-align: center;">
+
+      <div class="rect" id="announcements">
+        <h2 class="boxHeader"> Announcements: </h2>
+        <p class="announcementText">
+          Welcome to the Berkeley Hackclub page! Expect more Hackathons coming second semester with an emphasis on web development. Our December Hackathon came and went and we were very surprised at the projects that came through. They were amazing! You can check them out <a style="color:white" href="https://github.com/berkeleyhackclub/Hackathon-Projects">HERE.</a> We’ve began to program using p5.js a simple javascript processing library that is perfect for beginners and experienced programmers alike, you can see the details in the resources → (over there) Expect more long-term projects in the months to come!
+        </p>
+
+        <h2 class="boxHeader" style="top: 10px;"> About:  </h2>
+        <p class="announcementText">
+          Our club is all about supporting you and your code endeavors. You don’t need computers and can develop projects on the H205 computers. 
+        </p>
+      </div>
+
+      <div class="rect" id="resources">
+          <h2 class="boxHeader"> Code:  </h2>
+          <a class="resourceHeader" href="https://github.com/berkeleyhackclub"> Github: </a>
+          <p class="resourceText">
+              All our beginner projects are on github. You can work on these at our meetings or at home.
+          </p>
+          <a class="resourceHeader" href="https://p5js.org/reference/"> P5.js: </a>
+          <p class="resourceText">
+              We've started to use p5.js (javascript processing) checkout their reference here!
+          </p>
+          <a class="resourceHeader"  href="https://hackclub.com/workshops"> Hackclub Workshops </a>
+          <p class="resourceText">
+              Check out Hackclub's offical workshops. These range from simple websites, games, neural networks and much more.
+          </p>
+      </div>
+    </div>
+
+
+    <div class="rect" id="mailist">
+      <h2 class="boxHeader" > Join Mailist  </h2>
+      <form method="POST" action="https://formspree.io/berkeleyhackclub@gmail.com">
+        <label class="formText" for="fname">First & Last Name</label>
+        <input type="text" id="name" style="font-size: 15px;" name="name" placeholder="John Doe">
+        <label class="formText" for="lname">Email</label>
+        <input type="text" id="email" style="font-size: 15px;" name="email" placeholder="email@example.com">
+        <input  type="submit" value="Submit">
+      </form>
+    </div>
+
+
+  <div class="allPortraits">
+    <div class="portraitCard"> 
+      <img class="portrait" src="Images/image1.jpg">
+      <h1 class="portraitHeader"> Andre Assadi </h1>
+      <h4 class="portraitNumber">Senior, 510-813-1566 </h4>
+      <a href="mailto:andreassadi@students.berkeley.net" class="portraitContactButton"> <img style="height: 30px; vertical-align: middle; padding-bottom: 3px;"  src="icons/mail2.png">   Contact </a>
+    </div>
+
+    <div class="portraitCard"> 
+      <img class="portrait" src="Images/image2.jpg">
+      <h1 class="portraitHeader"> Felix Moses </h1>
+      <h4 class="portraitNumber">Junior, 510-365-1829 </h4>
+      <a href="mailto:felixmoses@students.berkeley.net" class="portraitContactButton"> <img style="height: 30px; vertical-align: middle; padding-bottom: 3px;"  src="icons/mail2.png">   Contact </a>
+    </div>
+
+    <div class="portraitCard"> 
+      <img class="portrait" src="Images/image3.jpg">
+      <h1 class="portraitHeader"> Greg Saldanha </h1>
+      <h4 class="portraitNumber">Soph, 510-367-2406 </h4>
+      <a href="mailto:gregorysaldanha@students.berkeley.net"  class="portraitContactButton"> <img style="height: 30px; vertical-align: middle; padding-bottom: 3px;"  src="icons/mail2.png">   Contact </a>
+    </div>
+
+  </div>
+
+    <div class="footer">
+        <div>
+          <p class="footer_note"> JOIN THE CLUB </p>
+        </div>
+        <div style="text-align: center; position:relative; top: 40px;">
+          <a style="padding-left: 5px; padding-right: 5px" href="https://github.com/berkeleyhackclub"><img src="Icons/github.png" width="30px" ></a>
+          <a style="padding-left: 5px; padding-right: 5px" href="https://hackclub.com/slack_invite/"><img src="Icons/slack.png" width="30px"></a>
+          <a style="padding-left: 5px; padding-right: 5px" href="mailto:berkeleyhackclub@gmail.com"><img src="Icons/mail.png" width="30px"></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
