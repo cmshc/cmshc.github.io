@@ -11,16 +11,11 @@ function init() {
 
 function getCurrentDate() {
   var today = new Date();
+  
   var dd = today.getDate();
   var mm = today.getMonth() + 1; //January is 0!
-
   var yyyy = today.getFullYear();
-  if (dd < 10) {
-    dd = '0' + dd;
-  }
-  if (mm < 10) {
-    mm = '0' + mm;
-  }
+
   var today = { month:parseInt(mm),day:parseInt(dd),year:parseInt(yyyy)};
   return today;
 }
