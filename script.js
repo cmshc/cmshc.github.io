@@ -27,6 +27,7 @@ function formatDate(date) {
 }
 
 function compareTwoDates(currentDate,upcomingDate) {
+  console.log(currentDate,upcomingDate)
   if (currentDate.month < upcomingDate.month) { // different month
     return true;
   }
